@@ -35,12 +35,12 @@ public class EchoApplication {
 
     @EventMapping
     public TextMessage handleTextMessageEvent(MessageEvent<TextMessageContent> event) {
-        System.out.println(Str.ToUpperCase()("event: " + event);
+        System.out.println(Str.ToUpperCase(("event: " + event));
         return new TextMessage(event.getMessage().getText());
     }
 
     @EventMapping
     public void handleDefaultMessageEvent(Event event) {
-        System.out.println(Str.toUpperCase()("event: " + event);
+        System.out.println(Str.toUpperCase(("event: " + event));
     }
 }
